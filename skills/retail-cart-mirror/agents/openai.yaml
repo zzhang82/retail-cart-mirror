@@ -1,0 +1,11 @@
+interface:
+  display_name: "Retail Cart Mirror"
+  short_description: "Verify retail buy lists against live carts"
+  default_prompt: "Use $retail-cart-mirror to prepare a legitimate retail bulk purchase cart from my buy list, verify every colour/size/substitution, and stop before checkout, payment, or human-verification bypass."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "playwright"
+      description: "Recommended for visible browser navigation, cart inspection, and variant evidence capture."
+policy:
+  allow_implicit_invocation: true
